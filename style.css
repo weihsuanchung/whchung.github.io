@@ -1,136 +1,56 @@
-/* Base styles */
 body {
-  font-family: 'Roboto', sans-serif;
-  background: #f9f9fb;
-  color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f4f7fa;
+  color: #1f2d3d;
   margin: 0;
   padding: 0;
-  transition: background 0.3s, color 0.3s;
 }
 
-header {
-  background: #003355;
-  color: white;
-  padding: 2rem 1rem;
+nav.compact-nav {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 1.2rem 1rem;
   text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
 }
 
-header img {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid white;
-  margin-bottom: 1rem;
-}
-
-/* Chinese name */
-header h1 .chinese {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: normal;
-  margin-top: 0.2rem;
-}
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.8rem;
-  margin-top: 1rem;
-}
-
-nav a,
-nav button {
-  color: #fff;
-  background: none;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
+nav.compact-nav a {
+  margin: 0 0.8rem;
+  color: #4a6fa5;
   text-decoration: none;
-  padding: 0.3rem 0.6rem;
+  font-weight: 500;
 }
 
-nav button:hover,
-nav a:hover {
+nav.compact-nav a:hover {
   text-decoration: underline;
 }
 
 main {
   max-width: 800px;
   margin: 2rem auto;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 
-h2 {
-  font-size: 1.4rem;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 0.4rem;
+h1 {
+  font-size: 2rem;
   margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
 }
 
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
-  color: #666;
+.project {
+  margin-bottom: 2rem;
 }
 
-/* Dark Mode */
-body.dark {
-  background: #121212;
-  color: #e0e0e0;
+.project h2 {
+  font-size: 1.3rem;
+  color: #4a6fa5;
+  margin-bottom: 0.3rem;
 }
 
-body.dark header {
-  background: #1f1f1f;
-}
-
-body.dark nav a,
-body.dark nav button {
-  color: #eee;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  header img {
-    width: 100px;
-    height: 100px;
-  }
-
-  h2 {
-    font-size: 1.25rem;
-  }
-
-  nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    font-size: 0.95rem;
-  }
-
-  nav a,
-  nav button {
-    padding: 0.2rem 0.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  header {
-    padding: 1.5rem 1rem;
-  }
-
-  header img {
-    width: 90px;
-    height: 90px;
-  }
-
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  nav {
-    gap: 0.3rem;
-    font-size: 0.9rem;
-  }
+.project p {
+  margin: 0.2rem 0;
+  color: #6c7a89;
 }

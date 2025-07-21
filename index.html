@@ -1,44 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wei-Hsuan Chung 鍾瑋軒 | Academic CV</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <img src="your-photo.jpg" alt="Wei-Hsuan's Photo" />
-    <h1>Wei-Hsuan Chung <br><span class="chinese-name">鍾瑋軒</span></h1>
-    <p>Physics & Sociology Undergraduate · National Taiwan University</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="skills.html">Skills</a>
-      <a href="cv.html">CV</a>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>Hello! I’m Wei-Hsuan, currently pursuing a double major in Physics and Sociology at NTU. I’m interested in quantum information, computing, and science education. I enjoy learning across disciplines and collaborating in research teams.</p>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>B.S. in Physics</strong>, National Taiwan University (2023–Present)</li>
-        <li><strong>Double Major in Sociology</strong>, NTU (2024–Present)</li>
-        <li><strong>Quantum Computing and Information Program</strong>, NTU (2025–2026)</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 Wei-Hsuan Chung 鍾瑋軒
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wei-Hsuan Chung</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      :root {
+        --bg: #f4f7fa;
+        --text: #1f2d3d;
+        --primary: #4a6fa5;
+        --muted: #6c7a89;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+      }
+      header {
+        background-color: white;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        padding: 1.2rem 2rem;
+        text-align: center;
+      }
+      nav a {
+        margin: 0 1rem;
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 500;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 2rem;
+      }
+      .avatar {
+        flex: 0 0 240px;
+        text-align: center;
+      }
+      .avatar img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 100px;
+        border: 4px solid #e0e7ef;
+      }
+      .info {
+        flex: 1 1 300px;
+        max-width: 600px;
+      }
+      h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0.4rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+        margin-top: 1.5rem;
+        color: var(--primary);
+      }
+      p {
+        line-height: 1.6;
+        color: var(--muted);
+      }
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .info {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="experience.html">Experience</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="avatar">
+          <img src="portrait.jpg" alt="Portrait of Wei-Hsuan Chung" />
+        </div>
+        <div class="info">
+          <h1>Wei-Hsuan Chung 鍾瑋軒</h1>
+          <h2>About Me</h2>
+          <p>
+            I am an undergraduate student at National Taiwan University majoring in Physics and Sociology. My research interests lie in quantum information, condensed matter theory, and political sociology. I enjoy working on interdisciplinary problems and collaborating across fields.
+          </p>
+          <h2>Education</h2>
+          <ul>
+            <li><strong>National Taiwan University</strong> — B.S. in Physics, B.A. in Sociology (Expected 2026)</li>
+            <li>Affiliated with the Quantum Information Center and Academia Sinica summer research program</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
